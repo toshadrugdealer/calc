@@ -8,7 +8,6 @@ import { PlotsWrapper } from "./components/Plots/PlotsWrapper";
 
 function App() {
   const entry = useAppSelector((store) => store.calculator.remaining);
-  console.log(123);
   return (
     <Container>
       <Grid container spacing={2}>
