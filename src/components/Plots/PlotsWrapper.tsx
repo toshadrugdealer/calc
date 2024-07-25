@@ -7,15 +7,16 @@ import { GrowthChart } from "./GrowthChart/GrowthChart";
 
 export function PlotsWrapper() {
   const months = useAppSelector((store) => store.calculator.monts);
+
   const dispatch = useAppDispatch();
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12}>
+      <Grid xs={12}>
         <InvestmentsChart />
         <GrowthChart />
       </Grid>
       <Grid item xs={12}>
-        <Stack spacing={2} direction="row" sx={{ m: 5 }} alignItems="center">
+        <Stack spacing={2} direction="row" sx={{ m: 1 }} alignItems="center">
           <Slider
             size="small"
             aria-label="Small"
